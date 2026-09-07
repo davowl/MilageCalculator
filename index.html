@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milersättningskalkylator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Milersättningskalkylator</h1>
+        <div class="userInputs">
+            <label class="inputLabel" for="basePoint">Startpunkt:</label>
+            <input name="basePoint" class="input" type="text" id="basePoint" placeholder="Ange startpunkt">
+
+            <label class="inputLabel" for="destinationPoint">Destination:</label>
+            <input name="destinationPoint" class="input" type="text" id="destinationPoint" placeholder="Ange destination">
+
+            <label class="inputLabel" for="pricePerMile">Pris per mil:</label>
+            <input name="pricePerMile" class="input" type="number" id="pricePerMile" placeholder="Ange pris per mil">
+
+            <div class="returnTrip">
+                <p>Tur och Retur?</p>
+                <input type="checkbox" id="isReturnTrip"> 
+            </div>
+
+            <button id="calculateButton">Beräkna</button>
+        </div>
+        <div class="result">
+            <div class="resultText">
+                <p id="distanceLabel">Sträcka:</p>
+                <p id="distanceText">0 km</p>
+            </div>
+
+            <div class="resultText">
+                <p id="resultLabel">Kostnad:</p>
+                <p id="resultText">0 kr</p>
+            </div>
+
+            <div class="resultText">
+                <p id="returnTripLabel">Tur och Retur:</p>
+                <p id="returnTripText">Nej</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
